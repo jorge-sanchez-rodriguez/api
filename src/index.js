@@ -13,6 +13,7 @@ app.use(express.json());
 // Exponer las rutas definidas en el archivo routes/index.js, es importante que esta línea esté después de la línea app.use(express.json()) para que las rutas puedan interpretar correctamente los cuerpos de las peticiones en formato JSON.
 app.use(routes)
 
+console.log("Routes initialized");
 
 const PORT = process.env.PORT || 3000;
 
